@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <title>Simulation</title>
+        <meta name="description" content="">
+        <link rel="short cut" href="">
+	   <link rel="stylesheet" href="css/style.css" type="text/css">
+        <style>
+            body
+            {
+                  background: url(image/feedback-img.jpg) no-repeat fixed;
+                  background-size: cover;
+            }
+            .content1
+            {
+                width: 80%;
+                height: 100%;
+                background-color: antiquewhite;
+                margin-top:10%;
+                margin-left:10%;
+            }
+            #Admin-list ul,
+#Admin-list ul li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#Admin-list ul {
+  position: relative;
+  z-index: 597;
+  float: left;
+}
+#Admin-list ul li {
+  float: left;
+  min-height: 1px;
+  line-height: 1em;
+  vertical-align: middle;
+  position: relative;
+}
+#Admin-list ul li.hover,
+#Admin-list ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+#Admin-list ul li {
+  float: none;
+}
+/* Custom CSS Styles */
+#Admin-list {
+  width: 210px;
+  height:170px;
+  font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
+  zoom: 1;
+  font-size: 12px;
+  display: inline;
+}
+#Admin-list:before {
+  content: '';
+  display: block;
+}
+#Admin-list:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#Admin-list a {
+  display: block;
+  padding: 15px 20px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#Admin-list > ul {
+  width: 210px;
+  height:300px;
+}
+#Admin-list > ul > li > a {
+  border-right: 4px solid #1b9bff;
+  color:black;
+}
+#Admin-list > ul > li > a:hover {
+  color: #ffffff;
+}
+#Admin-list > ul > li a:hover,
+#Admin-list > ul > li:hover a {
+  background: #1b9bff;
+}
+#Admin-list li {
+  position: relative;
+}
+#Admin-list ul li.has-sub > a:after {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -6px;
+}
+#Admin-list.align-right > ul > li > a {
+  border-left: 4px solid #1b9bff;
+  border-right: none;
+}
+#Admin-list.align-right {
+  float: right;
+}
+#Admin-list.align-right li {
+  text-align: right;
+}
+#Admin-list.align-right ul li.has-sub > a:after {
+  content: none;
+}
+
+.selected-Li
+{
+background-color:#1b9bff;
+}
+            .info
+            {
+                display: inline;
+                position: absolute;
+                margin-left: 25%;
+                margin-top: -420px;
+                font-weight: bold;
+            }
+
+        #exit
+        {
+          background-color: #00aeee;
+          text-decoration: none;
+          color:white;
+        } 
+h3
+ {
+ margin-left: 15px;
+padding-top:10%;
+ }   
+        #exit:hover
+        {
+          cursor: pointer;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="content1">
+            <h3>Forecasting Methods</h3>
+            <div id='Admin-list'>
+			    <ul>
+					<li class="selected-Li"><a href='forecast.html'>Simple moving average</a></li>
+					<li><a href='forecast2.html'>Weighted moving average</a></li>
+					<li><a href='forecast3.html'>exponential smoothing</a></li>
+          <li ><a href='forecast4.html'>MAD</a></li>
+				</ul>
+			 </div>
+            <div class="info">
+            <form action="simple.php" method="post">
+            <h3>Enter Year To Calculate Forecast For its Months *:</h3>
+               <br /> <input type="text" name="year" /><br><br>
+              <h3>Enter month To Calculate Forecast For it *:</h3>
+               <br /> <input type="text" name="mon" /><br><br>
+               <h3> Enter number of months for operation *:</h3>
+               <br /> <input type="text" name="num" /><br><br>
+                <input type="submit" value="Send" name="submit" /><br>
+                <h6> *Required </h6><br /><br />
+</form>
+<a href="front page.html" id="exit" >Exit</a>
+            </div>
+        </div>
+    </body>
+</html>

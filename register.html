@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>Register</title>
+        <meta name="description" content="">
+        <link rel="short cut" href="">
+	   <link rel="stylesheet" href="css/style.css" type="text/css">
+        <style>
+            
+            body
+            {
+                  background: url(image/feedback-img.jpg) no-repeat fixed;
+                  background-size: cover;
+            }
+            h2
+            {
+                color: white;
+                margin: 7%;
+            }
+            .tryitbtn
+            {
+                text-decoration: none;
+                color: white;
+                font-family: Montserrat,Verdana , Geneva, Tahoma, Arial, Helvetica, sans-serif;
+                background-color: #555555;
+                margin-left: 5px;
+                margin-right: 180px;
+                border: 1px solid #555555;
+                border-radius: 0;
+                margin-top: 10px;
+                font-size: 16px;
+                padding: 8px 26px;
+                font-weight: normal;
+                -webkit-transition: all 0.4s ease;
+                -moz-transition: all 0.4s ease;
+                -o-transition: all 0.4s ease;
+                transition: all 0.4s ease;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            }
+            .tryitbtn:hover, .tryitbtn:active 
+            {
+            background-color:#ffffff;
+            color:#555555;            
+           }
+            .descript
+            {
+                width:50%;
+                height: 20%;
+                margin-left:23%;
+                margin-top:5%;
+                margin-bottom: 3%;
+                background-color:RGBA(72,72,72,0.4);
+                border-radius: 6px;
+            }
+            .descript p
+            {
+                color:white;
+                text-align: justify;
+                text-justify: inter-word;
+                font-size: 16px;
+                text-align: center;
+                padding-top:6%;
+            }
+            .form
+            {
+                width:40%;
+                height: 46%;
+                margin-left:25%;
+                background-color: antiquewhite;
+                padding:50px;
+            }
+            .form #year
+            {
+                font-weight: bold;
+                margin-right:4%;
+                background-color: aliceblue;
+            }
+            .form #month
+            {
+                font-weight: bold;
+                margin-right:2%;
+                background-color: aliceblue;
+            }
+            #demand
+            {
+                font-weight: bold;
+                background-color: aliceblue;
+            }
+            #forecast
+            {
+                font-weight: bold;
+                background-color: aliceblue;
+            }
+            .year
+            {
+                width:230px;
+                height:30px;
+            }
+            .month
+            {
+                width:80px;
+                height: 30px;
+            }
+            textarea
+            {
+                resize: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="descript">
+            <p>Given a list of sequential data, you can construct the n-point moving average (or rolling average) by finding the average of each set of n consecutive points. For example, if you have the ordered data set
+
+10, 11, 11, 15, 13, 14, 12, 10, 11</p>
+        </div>
+        <div class="form">
+        <form  action="insert.php" method="post">
+            <label id="year">Year* :</label>
+            <input type="text" name="year" class="year"/><br><br>
+            <label id="month">Month* :</label>
+            <select class="month" name="month">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select><br><br>
+            <label id="demand">Demand* :</label>
+            <input type="text" name="demand" /><br><br>
+       <!--     <label id="forecast">Forecast* :</label>
+            <input type="text" name="forecast" /><br><br>-->
+            <input type="submit" value ="Add" name="submit" class="tryitbtn"/>
+            <a href="front%20page.html" class="tryitbtn">Exit</a>
+        </form>
+        </div>
+    </body>
+</html>
